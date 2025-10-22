@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Ikoyenia goes on and on',
-  tagline: '欢迎来到我的叨叨空间！主人闷头挖坑中...',
+  tagline: '写技术文档的，日常叨叨叨叨...',
 //  tagline: '欢迎来到我的叨叨空间！我是袁凯，一名技术文档工程师，在这里记录我的工作和生活，希望搭建出清晰的知识体系，同时也留下深深浅浅的前行足迹。如果恰巧你也有共鸣，热切期待你为这些瞬间留下只言片语。',
   favicon: 'img/favicon.ico',
 
@@ -80,18 +80,35 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '领域',
+          label: 'About',
         },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '娱乐',
+          label: 'Doc',
         },
-        {to: '/blog', label: '足迹', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'Blog',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Tech',
+        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'UIUX',
+        // },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Mgr',
+        },
+        {
+          href: 'https://github.com/ikoyeniago/ikoyeniago.github.io',
+          label: 'GitHub',
           position: 'right',
         },
       ],
@@ -100,25 +117,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: '领域',
-          items: [
-            {
-              label: '我的工作',
-              to: '/docs/我的工作',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
+          title: '足迹',
           items: [
             {
               label: 'Blog',
@@ -126,8 +125,34 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: '项目',
+          items: [
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
+          ],
+        },
+        {
+          title: '资源',
+          items: [
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
+          ],
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+            ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Ikoyenia`,
     },
     prism: {
       theme: prismThemes.github,
