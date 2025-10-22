@@ -11,29 +11,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '技术',
+    title: '最新文章1',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        主人闷头挖坑中...
+        闷头挖坑中...
       </>
     ),
   },
   {
-    title: '文档',
+    title: '最新文章2',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        主人闷头挖坑中...
+        闷头挖坑中...
       </>
     ),
   },
   {
-    title: '管理',
+    title: '最新文章3',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        主人闷头挖坑中...
+        闷头挖坑中...
       </>
     ),
   },
