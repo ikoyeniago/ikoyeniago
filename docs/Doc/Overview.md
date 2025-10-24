@@ -1,4 +1,10 @@
-# 文档
+---
+sidebar_position: 1
+sidebar_label: Overview
+sidebar_class_name: green
+---
+
+# Overview
 
 ## 文档方案
 
@@ -26,4 +32,4 @@
 
 
 
- ## 行业动态
+## 行业动态
