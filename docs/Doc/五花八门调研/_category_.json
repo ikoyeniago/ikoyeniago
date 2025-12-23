@@ -1,0 +1,14 @@
+{
+    "position": 3,
+    "label": "五花八门调研",
+    "collapsible": true,
+    "collapsed": true,
+    "className": "red",
+    "link": {
+      "type": "generated-index",
+      "title": "五花八门调研"
+    },
+    "customProps": {
+      "description": "This description can be used in the swizzled DocCard"
+    }
+  }

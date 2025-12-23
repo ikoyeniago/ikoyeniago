@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Ikoyenia goes on and on',
-  tagline: '写技术文档的，日常叨叨叨叨...',
+  tagline: '一名写技术文档的，日常叨叨叨叨叨叨...',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -192,8 +192,8 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: '有意来聊',
+              to: '/About/Contact',
             },
           ],
         },

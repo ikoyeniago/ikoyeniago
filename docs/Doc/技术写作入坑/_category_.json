@@ -1,0 +1,14 @@
+{
+    "position": 2,
+    "label": "技术写作入坑",
+    "collapsible": true,
+    "collapsed": true,
+    "className": "red",
+    "link": {
+      "type": "generated-index",
+      "title": "技术写作入坑"
+    },
+    "customProps": {
+      "description": "This description can be used in the swizzled DocCard"
+    }
+  }
