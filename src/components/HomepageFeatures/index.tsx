@@ -18,7 +18,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        职能系列：探讨下技术写作需要的硬技能和软实力，以及自我提升的的思路。
+        职能专题：探讨下技术写作所需的硬技能和软实力，以及自我提升的的思路。
       </>
     ),
     linktitle: '技术写作能力模型',
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        文档系列：分享下阅读扣子使用文档的感受，基于自身理解提出一种可能的优化思路。
+        文档专题：分享下阅读扣子使用文档的感受，并提出一种可能的优化思路。
       </>
     ),
     linktitle: '扣子使用文档调研',
@@ -40,7 +40,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        工程系列：分享下自建文档站点的过程，先聊聊有关静态站点生成器（SSG）的了解和试用体验。
+        工程专题：分享下自建文档站点的过程，先聊聊有关SSG的了解和试用体验。
       </>
     ),
     linktitle: '文档网站方案调研',

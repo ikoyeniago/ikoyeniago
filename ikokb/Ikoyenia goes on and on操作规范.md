@@ -1,4 +1,4 @@
-# STC Docs Hub运维操作（Windows）
+# Ikoyenia goes on and on操作规范（Windows）
 
 记录Ikoyenia个人内容平台的构建和运维相关操作。
 
