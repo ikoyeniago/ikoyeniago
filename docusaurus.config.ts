@@ -178,6 +178,11 @@ const config: Config = {
           docsPluginId: 'pageMgr' // 非默认示例，需要用docsPluginId来关联侧边栏
         },
         {
+          to: '/blog',
+          label: 'Blog',
+          position: 'right'
+        },
+        {
           href: 'https://github.com/ikoyeniago/ikoyeniago.github.io',
           label: 'GitHub',
           position: 'right',

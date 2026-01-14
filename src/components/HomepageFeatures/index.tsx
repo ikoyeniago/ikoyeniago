@@ -14,36 +14,36 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '推荐阅读1',
+    title: '专题1：职能（关于需要什么）',
     Svg: require('@site/static/img/subject_responsibility3.svg').default,
     description: (
       <>
-        职能专题：探讨下技术写作所需的硬技能和软实力，以及自我提升的的思路。
+        探讨下技术写作所需的硬技能和软实力，以及自我提升的的思路。
       </>
     ),
-    linktitle: '技术写作能力模型',
+    linktitle: '入坑之技术写作能力模型',
     linkpath: '/Doc/技术写作进阶/技术写作能力模型',
   },
   {
-    title: '推荐阅读2',
+    title: '专题2：文档（关于及格线在哪里）',
     Svg: require('@site/static/img/subject_technical_documentation3.svg').default,
     description: (
       <>
-        文档专题：分享下阅读扣子使用文档的感受，并提出一种可能的优化思路。
+        分享下阅读技术文档作品的感受，并提出一些可能的优化思路。
       </>
     ),
-    linktitle: '扣子使用文档调研',
+    linktitle: '入坑之扣子使用文档调研',
     linkpath: '/Doc/五花八门调研/扣子使用文档调研',
   },
   {
-    title: '推荐阅读3',
+    title: '专题3：工程（关于技术写作是系统工程）',
     Svg: require('@site/static/img/subject_engineering3.svg').default,
     description: (
       <>
-        工程专题：分享下自建文档站点的过程，先聊聊有关SSG的了解和试用体验。
+        技术写作不止需要写好文档，分享下如何更好地支持技术写作的探索。
       </>
     ),
-    linktitle: '文档网站方案调研',
+    linktitle: '入坑之文档网站方案调研',
     linkpath: '/Tech/文档网站方案调研',
   },
 ];
