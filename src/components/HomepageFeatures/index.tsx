@@ -15,7 +15,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: '推荐阅读1',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/subject_responsibility3.svg').default,
     description: (
       <>
         职能专题：探讨下技术写作所需的硬技能和软实力，以及自我提升的的思路。
@@ -26,7 +26,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '推荐阅读2',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/subject_technical_documentation3.svg').default,
     description: (
       <>
         文档专题：分享下阅读扣子使用文档的感受，并提出一种可能的优化思路。
@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '推荐阅读3',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/subject_engineering3.svg').default,
     description: (
       <>
         工程专题：分享下自建文档站点的过程，先聊聊有关SSG的了解和试用体验。

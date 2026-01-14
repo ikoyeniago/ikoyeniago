@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Ikoyenia goes on and on',
   tagline: '一名写技术文档的，日常叨叨叨叨叨叨...',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/iko_logo1.svg',
 
   // Set the production url of your site here
   url: 'https://ikoyeniago.github.io/',
@@ -137,10 +137,10 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Ikoyenia goes on and on',
+      title: 'Ikoyenia',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/iko_logo2.svg',
       },
       items: [
         {
