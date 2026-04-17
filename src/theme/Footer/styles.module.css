@@ -1,0 +1,45 @@
+.footer {
+  background-color: var(--iko-card-bg);
+  color: var(--iko-text);
+  padding: 3rem 1rem 2rem;
+  border-top: 1px solid rgba(95, 75, 139, 0.1);
+}
+
+.footerDark {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(95, 75, 139, 0.1);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footerDark .bottomRow {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 响应式 */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
