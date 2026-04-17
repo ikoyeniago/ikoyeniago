@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.text {
+  font-size: 0.9rem;
+  color: inherit;
+}
+
+.icons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.iconLink,
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: inherit;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.iconLink:hover,
+.iconButton:hover {
+  background-color: var(--iko-secondary);
+  color: var(--iko-primary);
+  transform: translateY(-2px);
+}
+
+/* 二维码弹窗 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.qrModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  text-align: center;
+  min-width: 250px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.qrImage {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.qrText {
+  font-size: 1rem;
+  color: var(--iko-primary);
+  margin: 0;
+}
+
+/* 响应式 */
+@media screen and (max-width: 768px) {
+  .container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .qrModal {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .qrImage {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* 减少动画偏好支持 */
+@media (prefers-reduced-motion: reduce) {
+  .iconLink,
+  .iconButton,
+  .closeButton {
+    transition: none;
+  }
+
+  .iconLink:hover,
+  .iconButton:hover {
+    transform: none;
+  }
+}

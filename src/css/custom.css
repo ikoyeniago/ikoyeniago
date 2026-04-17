@@ -6,25 +6,76 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* 主色调：星空紫 #5F4B8B */
+  --ifm-color-primary: #5F4B8B;
+  --ifm-color-primary-dark: #4a3a6d;
+  --ifm-color-primary-darker: #3d305a;
+  --ifm-color-primary-darkest: #2f2546;
+  --ifm-color-primary-light: #7a6aa3;
+  --ifm-color-primary-lighter: #9589ba;
+  --ifm-color-primary-lightest: #b0a8d1;
+  
+  /* 辅助色：数字黄 #FFD500 */
+  --ifm-color-secondary: #FFD500;
+  --ifm-color-secondary-dark: #e6c000;
+  --ifm-color-secondary-darker: #ccaa00;
+  --ifm-color-secondary-darkest: #b39500;
+  --ifm-color-secondary-light: #ffdd33;
+  --ifm-color-secondary-lighter: #ffe666;
+  --ifm-color-secondary-lightest: #fff099;
+  
+  /* 页面背景色：极淡紫灰 #F8F7FA */
+  --ifm-background-color: #F8F7FA;
+  --ifm-background-surface-color: #FDFBF5;
+  
+  /* 卡片背景色：暖米白 #FDFBF5 */
+  --ifm-card-background-color: #FDFBF5;
+  
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* 自定义颜色变量 */
+  --iko-primary: #5F4B8B;
+  --iko-secondary: #FFD500;
+  --iko-bg: #F8F7FA;
+  --iko-card-bg: #FDFBF5;
+  --iko-text: #333333;
+  --iko-text-light: #666666;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #7a6aa3;
+  --ifm-color-primary-dark: #6a5a93;
+  --ifm-color-primary-darker: #5a4a83;
+  --ifm-color-primary-darkest: #4a3a73;
+  --ifm-color-primary-light: #8a7ab3;
+  --ifm-color-primary-lighter: #9a8ac3;
+  --ifm-color-primary-lightest: #aaaad3;
+  
+  --ifm-background-color: #1a1a2e;
+  --ifm-background-surface-color: #16213e;
+  --ifm-card-background-color: #16213e;
+  
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 减少动画偏好支持 */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
