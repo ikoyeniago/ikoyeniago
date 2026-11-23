@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Ikoyenia goes on and on',
-  tagline: '一名写技术文档的，日常叨叨叨叨叨叨...',
+  tagline: '一名写技术文档的，不定时叨叨叨叨',
   favicon: 'img/iko_logo2.svg',
 
   // Set the production url of your site here
@@ -99,6 +99,24 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'pageMKT',
+        path: 'docs/MKT', // 营销相关文章的源文件路径
+        routeBasePath: 'MKT', // 营销相关文章的起始访问路径
+        sidebarPath: './sidebarsMKT.ts', // 营销相关文章的独立侧边栏
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'pageTRANS',
+        path: 'docs/TRANS', // 翻译相关文章的源文件路径
+        routeBasePath: 'TRANS', // 翻译相关文章的起始访问路径
+        sidebarPath: './sidebarsTRANS.ts', // 翻译相关文章的独立侧边栏
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'pageTeam',
         path: 'docs/Team', // 管理相关文章的源文件路径
         routeBasePath: 'Team', // 管理相关文章的起始访问路径
@@ -114,7 +132,7 @@ const config: Config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
-        docsRouteBasePath: ["Doc", "Tech", "DSGN", "Team"],
+        docsRouteBasePath: ["Doc", "Tech", "DSGN", "MKT", "TRANS", "Team"],
 
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
@@ -169,6 +187,20 @@ const config: Config = {
           position: 'left',
           label: 'DSGN',
           docsPluginId: 'pageDSGN' // 非默认示例，需要用docsPluginId来关联侧边栏
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'pageMKTSidebar', // 在sidebarsXXX.ts文件中定义
+          position: 'left',
+          label: 'MKT',
+          docsPluginId: 'pageMKT' // 非默认示例，需要用docsPluginId来关联侧边栏
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'pageTRANSSidebar', // 在sidebarsXXX.ts文件中定义
+          position: 'left',
+          label: 'TRANS',
+          docsPluginId: 'pageTRANS' // 非默认示例，需要用docsPluginId来关联侧边栏
         },
         {
           type: 'docSidebar',

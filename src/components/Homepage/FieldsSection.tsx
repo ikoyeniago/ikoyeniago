@@ -36,7 +36,7 @@ export default function FieldsSection({ fields }: FieldsSectionProps): JSX.Eleme
                   className={styles.button}
                   to={field.linkTo}
                 >
-                  探索一下
+                  点开看看→
                 </Link>
               </div>
             </div>
